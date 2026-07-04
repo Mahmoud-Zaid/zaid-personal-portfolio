@@ -532,12 +532,8 @@ h2 {
   justify-content: space-between;
   gap: clamp(2rem, 6vw, 6rem);
   padding: var(--space-7) 0 !important;
-  padding-block: var(
-    --space-7
-  ) !important; /* Handles top and bottom together */
-  padding-inline: var(
-    --space-4
-  ) !important; /* Handles left and right together */
+  padding-block: var(--space-7) !important;
+  padding-inline: var(--space-4) !important;
   padding-bottom: 0 !important;
   padding-top: 0px !important;
   margin-bottom: var(--space-8) !important;
@@ -591,11 +587,9 @@ h2 {
 }
 
 .hero-content h1 {
-  font-size: var(--text-3x); /* 4rem - Big, intentional display font */
-  line-height: 1.1; /* Tight line height for large text */
+  font-size: var(--text-3x);
+  line-height: 1.1;
   color: var(--slate-100);
-  /* OPTICAL ADJUSTMENT: Push the sub-heading slightly tighter 
-     than the global parent gap to group them together */
   margin-bottom: calc(var(--space-2) * -1);
   /*
   background: linear-gradient(90deg, var(--slate-100), var(--ice-platinum));
@@ -612,13 +606,11 @@ h2 {
 }
 
 .hero-description {
-  font-size: var(--text-base); /* 1rem */
-  line-height: 1.6; /* Generous line height for small body paragraphs */
-  max-width: 32rem; /* Restrict length so lines don't stretch too wide */
+  font-size: var(--text-base);
+  line-height: 1.6;
+  max-width: 32rem;
 
-  /* OPTICAL ADJUSTMENT: Create an intentional macro-jump before the CTA 
-     so the button stands out on its own */
-  margin-bottom: var(--space-3); /* Adds extra isolation space for the CTA */
+  margin-bottom: var(--space-3);
 
   color: var(--slate-300);
 }
@@ -734,23 +726,6 @@ h2 {
     )
     1 fill;
 }
-/* .site-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-
-  background: url("../img/hero-background0.webp") center / cover no-repeat;
-
-  opacity: 0.52;
-}*/
-
-/* =========================
-Features SECTION
-========================= */
-/* .teasers-section {
-  background: var(--slate-900);
-} */
 
 .teasers-section a {
   text-decoration: none;
@@ -959,16 +934,6 @@ Services SECTION
   visibility: visible;
   pointer-events: all;
 }
-
-/* .services01.services01-move ~ .services02 {
-  transform: translateY(0);
-  opacity: 1;
-} */
-
-/* .services01,
-.services02 {
-  grid-area: service;
-} */
 
 /* HEADER */
 
@@ -1895,7 +1860,7 @@ Skills SECTION
   font-weight: bold;
 }
 
-/* Magic Trick: Extract data-target from .circle and append a '%' symbol */
+/*  Extract data-target from .circle and append a '%' symbol */
 .circle .percentage::before {
   /* 1. Reset a custom counter name to your current variable value */
   counter-reset: progress var(--value);

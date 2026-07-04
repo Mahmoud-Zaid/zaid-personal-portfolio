@@ -23,15 +23,6 @@ servicesDropdowns.forEach((dropdown, i) => {
 
 //////////////////////////////////////////////////////////
 
-//header position code
-
-// const headerPosition = document.querySelector("#header");
-// const headerObserver = new IntersectionObserver((entries) => {
-//   console.log(entries);
-// }, {});
-
-// headerObserver.observe(headerPosition);
-
 const header = document.querySelector("#header");
 const heroHeading = document.querySelector("#hero-heading");
 
@@ -47,16 +38,7 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(heroHeading);
 
-///////////////////////////////////////
-
-// const learnMoreBtn = document.querySelector("#learn-more-btn");
-// const services02 = document.querySelector(".services01");
-
-// learnMoreBtn.addEventListener("click", () => {
-//   services02.classList.toggle("services01-move");
-// });
-
-///////////////////////////////////////
+//////////////////////////////////////////////////////////
 
 const mainSection = document.querySelector(".services01");
 const learnMoreLinks = document.querySelectorAll(".learn-more-btn");
@@ -96,7 +78,7 @@ backButtons.forEach((btn) => {
   });
 });
 
-///////////////////////////////////////
+//////////////////////////////////////////////////////////
 
 const mainExp = document.querySelector(".exp-main");
 const expDetailsBtn = document.querySelectorAll(".exp-icon");
@@ -134,14 +116,15 @@ expBackButtons.forEach((btn) => {
   });
 });
 
-//----------------------------------------
+//////////////////////////////////////////////////////////
+
 document.addEventListener("DOMContentLoaded", () => {
   const circles = document.querySelectorAll(".circle");
   console.log(circles);
   const observerOptions = {
-    root: null, // uses the viewport
+    root: null,
     rootMargin: "0px",
-    threshold: 0.3, // Triggers when 30% of the circle is visible
+    threshold: 0.3,
   };
 
   const observer = new IntersectionObserver((entries, observer) => {
@@ -161,8 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, observerOptions);
 
-  // Attach the observer to all circles
   circles.forEach((circle) => observer.observe(circle));
 });
 
-//-----------------------------
+//////////////////////////////////////////////////////////
