@@ -659,6 +659,7 @@ h2 {
   height: auto;
   padding-bottom: 0px;
   width: 500px;
+  filter: contrast(1.15) brightness(1.03);
 
   /* border-radius: 14px;
   background: linear-gradient(160deg, var(--slate-700), var(--slate-800));
@@ -760,6 +761,20 @@ h2 {
   position: relative;
   background-color: var(--slate-900);
   margin-bottom: 0;
+}
+
+.teaser-h-mobile-break {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .teaser-h-mobile-break {
+    display: inline;
+  }
+
+  .teaser-card h3 {
+    text-align: center;
+  }
 }
 
 /* Glowing Spin*/
