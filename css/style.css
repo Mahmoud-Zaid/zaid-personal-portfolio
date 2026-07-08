@@ -127,6 +127,8 @@ body {
   background: var(--slate-950);
   color: var(--slate-100);
   line-height: 1.6;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body > *:not(:first-child) {
@@ -162,6 +164,7 @@ body > *:not(:first-child) {
   display: flex;
   justify-content: center;
   width: 100vw;
+  width: 100dvw;
 }
 
 .flex-centered {
@@ -483,6 +486,7 @@ h2 {
 
   .nav-container {
     height: 100vh;
+    height: 100dvh;
     width: 100%;
     position: fixed;
     top: 0;
@@ -1674,6 +1678,7 @@ Testimonials SECTION
   background: #0b0d10;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   width: 100vw;
+  width: 100dvw;
   padding-bottom: 0 !important;
 }
 
